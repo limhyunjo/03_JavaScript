@@ -1,0 +1,19 @@
+/* 화면 가운데 네모 박스 
+그 안에 잔액: 10000원
+그 밑에 금액: 박스 안에 input태그
+가장 밑에 입금 출금 버튼
+
+토요일까지 숙제*/
+
+div{
+    border: 2px solid black;
+    color: black;
+    width: 50%;
+    height: 35%;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 20px;
+    margin: 20px;
+    display: block;
+
+}
