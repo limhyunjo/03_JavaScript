@@ -43,43 +43,36 @@
           -> alert("비밀번호가 일치하지 않습니다") 출력
     </pre>
     
-    <button onclick="test()">연습용 출금 버튼</button>
+   
 
     <!-- 박스 안에 박스 두개와 버튼 두개 만들기 -->
-    <div>
     
-        <div id="b1">
-            <h1> 잔액 : <span id="calcResult"></span> </h1>
-        </div>
-
-        </div>
-      
-   
-   
-        <div id="b2">
-            <span>
-                금액:
-                <input type="number">
-
-            </span>
-          
-        </div>
-        <div>
-            <button onclick="calc('w')">입금</button>
-
-        </div>
-
-        <div>
-            <button onclick="calc('-')">출금</button>
-        </div>
-       
-
-      
     
-       
+
+    <div class="bank">
+
+      <div class="row"><!-- 잔액 -->
+          <h2>잔액 : <span id="balance" >10000</span></h2>
+      
+
+
+      </div>
+     
+      <div class="row2">
+        <label for="input"> 금액 : </label>
+        <input type="number" id="input">
+
+      </div><!-- 금액 -->
+      
+      <div class="btn-row">
+
+        <button onclick="deposit()">입금</button>
+        <button onclick="withdrawal()">출금</button>
+      </div><!-- 입출금 버튼 -->
+
+
     </div>
-
-  
+   
   <script src="../js/06_입출금하기.js"></script>
 </body>
 </html>

@@ -1,22 +1,50 @@
-/* prompt 사용 연습 */
+const result = document.getElementById("balance");
+let balance = 10000;
 
-function test(){
+const password = '1234';
 
-    const password = prompt("비밀번호를 입력하세요");
-    
-    //확인-> 입력한 문자열
-    //최소-> null
+// 함수 작성
+function deposit() {
+  // 입금 버튼 클릭 시
+  // input에 입력된 금액 만큼 잔액(balance)에 추가
+  const input = document.getElementById("input");
+  const value1 = Number(input.value);
 
-    if(password==null){
-        alert("취소");
+  balance += value1;
 
-    }else{//확인
-   // 입력한 비밀번호가 '1234'가 맞는지 확인
-   if(password=='1234'){
+  result.innerText = balance;
+}
+
+function withdrawal() {
+  // 출금 버튼 클릭 시 prompt를 이용해 비밀번호를 입력 받기
+  const passwordInput = prompt("비밀번호를 입력하세요");
+
+  // 비밀번호가 일치할 경우
+  if (passwordInput === null) {
+    alert("취소");
+  } else if (passwordInput === '1234') {
     alert("비밀번호가 일치");
-   } else {
-    alert("비밀번호가 일치하지 않습니다");
-   }
 
+    // 입력한 비밀번호가 '1234'가 맞는지 확인
+    const input = document.getElementById("input");
+    const value1 = Number(input.value);
+
+    // 1 출금할 금액이 잔액(balance)보다 큰 경우
+    if (value1 > balance) {
+      alert("출금 금액이 잔액보다 클 수 없습니다");
+    } else {
+      // 2 출금할 금액이 잔액(balance)보다 작거나 같은 경우
+      balance -= value1;
+      alert(value1 + "원이 출금 되었습니다. 남은 잔액: " + balance + "원");
+      result.innerText = balance; // Update the balance in the UI
+    }
+  } else {
+    alert("비밀번호가 일치하지 않습니다");
   }
 }
+
+
+  
+// 테스트를 위해 deposit과 withdrawal 함수 호출
+deposit();
+withdrawal();

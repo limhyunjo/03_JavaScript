@@ -5,15 +5,56 @@
 
 토요일까지 숙제*/
 
-div{
-    border: 2px solid black;
+.bank{
+    border: 5px solid black;
+    border-radius: 5%;
     color: black;
-    width: 50%;
-    height: 35%;
+    width: 350px;
+    height: 300px;
     font-weight: bold;
     font-size: 15px;
     padding: 20px;
-    margin: 20px;
+    margin: auto;
     display: block;
 
+}
+
+.row{
+    border: 4px solid rgb(228, 17, 17);
+    color: red;
+    width: 80%;
+    height: 70px;
+    display: flex;
+    padding: 10px;
+    margin: 30px 20px;
+    
+}
+.row2{
+    border: 4px solid rgb(69, 24, 193);
+    color: blue;
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 30px 20px;
+}
+
+
+.btn-row{
+    display: flex;
+    margin-top: 30px;
+}
+
+
+.btn-row>button{
+    
+    height: 50px;
+    margin: 0 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 3px solid green;
+    border-radius: 5%;
+    color: green;
+    background-color: white;
+    flex-grow: 1;
 }
