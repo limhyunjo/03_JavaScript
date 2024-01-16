@@ -1,7 +1,7 @@
 const result = document.getElementById("balance");
 let balance = 10000;
-
 const password = '1234';
+
 
 // 함수 작성
 function deposit() {
@@ -16,16 +16,18 @@ function deposit() {
 }
 
 function withdrawal() {
+  
+
   // 출금 버튼 클릭 시 prompt를 이용해 비밀번호를 입력 받기
-  const passwordInput = prompt("비밀번호를 입력하세요");
+  const password = prompt("비밀번호를 입력하세요");
 
   // 비밀번호가 일치할 경우
-  if (passwordInput === null) {
+  if (password == null) {
     alert("취소");
-  } else if (passwordInput === '1234') {
+  } else if (password == '1234') {
     alert("비밀번호가 일치");
 
-    // 입력한 비밀번호가 '1234'가 맞는지 확인
+   
     const input = document.getElementById("input");
     const value1 = Number(input.value);
 
