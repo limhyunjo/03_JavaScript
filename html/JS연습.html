@@ -7,29 +7,20 @@
     <link rel="stylesheet" href="../css/js연습.css">
 </head>
 <body>
-    <!-- 12345 출력 -->
-   <button onclick="check1()">확인하기1</button>
+   <div class="calculator">
 
-   <button onclick="check2()">확인하기2</button>
-   
-   <button onclick="check3()">확인하기3</button>
-   
-    <!-- 1부터 10까지 모든 정수의 합 -->
-    <hr>
-    
-    시작<input type="number" id="start"><br>
-    종료<input type="number" id="end">
-    <button onclick="sumFn()">합계</button>
-    <span id="result"></span>
+       <div class="row" ></div> <!-- 첫번째값 -->
+       <div class="row"></div> <!-- 두번째 값 -->
+       <div class="row">
+        <button>+</button>
+        <button>_</button>
+        <button>*</button>
+        <button>/</button>
+        <button>%</button>
+       </div> <!-- 버튼 5개 -->
+       <div class="row"></div> <!-- 결과 -->
 
-
-
-   
-   <button onclick="check5()">확인하기5</button>
-   
-   <button onclick="check6()">확인하기6</button>
-   
-
+   </div>
  <script src="../js/js연습.js"></script>
 </body>
 </html>

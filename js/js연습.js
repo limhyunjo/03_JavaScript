@@ -43,3 +43,8 @@ function sumFn(){
      }
      result.innerText=sum;
 }
+
+var number3=50;
+number3=40;
+;
+
