@@ -1,0 +1,32 @@
+#lottoBoard{
+    border: 1px solid black;
+   width: 250px;
+   height: 450;
+    
+   display: flex;/*  옆으로 배치됨 */
+   flex-wrap: wrap;/* 넘어가면 다음줄로 */
+   align-content: flex-start;/* 교차축 시작점에 배치 */
+}
+
+  .number{
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 10px;
+    
+    /* 글자를 상자 가운데 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer; 
+
+    user-select: none;
+  }
+
+
+  .active{
+    background-color: plum;
+  }
