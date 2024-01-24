@@ -1,5 +1,6 @@
 
 
+
 .container{
     
     width: 90px;
@@ -8,7 +9,8 @@
     display: flex;/*  옆으로 배치됨 */
     flex-wrap: wrap;/* 넘어가면 다음줄로 */
     align-content: flex-start;/* 교차축 시작점에 배치 */
-  }
+    margin: 0 auto; /* 가로 중앙 정렬을 위한 코드 */
+}  
   
   .number{
     box-sizing: border-box;
