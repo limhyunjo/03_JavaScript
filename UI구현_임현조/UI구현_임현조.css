@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;  
+  }
+  
+  .display{
+    border-bottom: 1px solid rgb(189, 186, 186);
+
+    width: 280px;
+    height: 50px;
+
+    margin-left: 20px;
+    padding-left: 55px;
+
+    font-size: 28px;
+    font-weight: bold;
+    
+  }
+  .container{
+
+    border:1px solid grey;
+
+    width: 602px;
+    height: 600px;
+
+    display: inline-flex;
+  }
+
+  .numBox{
+    font-weight: bold;
+    width: 302px;
+    margin: 20px 20px 20px 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .number{
+    width: 100px;
+    height: 95px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    user-select: none;
+    font-size: 22px;
+    font-style: normal;
+
+  }
+
+  .number:hover{
+    background-color: rgb(151, 229, 137);
+    font-size: 22px;/* 클릭 시로 옮겨야 함 */
+  }
+
+
+
+  button{
+   
+    border: 2px solid;
+    width: 300px;
+    height: 29px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    border-radius: 6px;
+
+
+
+  }
+  #pushBtn{
+    margin-top: 18px;
+    border-color: rgb(45, 163, 45);
+    color: rgb(45, 167, 45);
+    background-color: white;
+   
+  }
+  #resetBtn{
+    margin-top: 6px;
+    border-color: rgb(137, 144, 137);
+    color: rgb(141, 148, 141);
+    background-color: white
+  }
+
+  #recordContainer{
+    border-left: 1px solid rgb(152, 152, 152);
+
+    width: 220px;
+    margin: 20px 10px;
+    height: 560px;
+}
+   
+  
+  .stack{
+    display: flex;
+  }
+  #numList{
+    font-weight:bold;
+    font-size:15px;
+    font-style: normal;
+  }
