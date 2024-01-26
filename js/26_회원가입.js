@@ -24,6 +24,9 @@ const checkList = {
     const span = e.target.nextElementSibling.nextElementSibling;
   
     // 입력 X
+
+
+    
     if(value.trim().length == 0){
       span.textContent = "영어,숫자,-,_ 6~16글자 사이"; 
       e.target.value = ""; 
