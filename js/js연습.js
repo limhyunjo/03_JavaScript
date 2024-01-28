@@ -46,5 +46,23 @@ function sumFn(){
 
 var number3=50;
 number3=40;
-;
+
+
+
+
+function classTest(){
+ const divs= document.getElementsByClassName("cls-test");
+
+ divs[0].style.backgroundColor="#c1121f";
+ divs[1].style.backgroundColor="#fdf0d5";
+ divs[2].style.backgroundColor="#bc6c25";
+//  divs[ ].style.backgroundColor="rgb()";
+ /* 앞에 샾을 붙여야 색을 보여주넹 */
+
+ for(let i=0; i<=divs.length; i++){
+    divs[i].innerText=`${i+1}번 div입니다`;
+ }
+};
+
+
 
